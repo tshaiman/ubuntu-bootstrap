@@ -59,12 +59,12 @@ curl -L https://github.com/a8m/envsubst/releases/download/${ENVSUBST_VERSION}/en
 # Auto Suggestion
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+#k9s 
+brew install k9s
+
 ## ZSH Customizations
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
-
-az login
-az account set --subscription VideoIndexer-Dev
 
 echo "====sanity checks==="
 which kubectl
