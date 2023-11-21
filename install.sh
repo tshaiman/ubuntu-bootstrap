@@ -75,17 +75,3 @@ which yq
 which python
 which brew
 which kubelogin
-
-echo "connect to EUS cluster" 
-az aks get-credentials -g vi-dev-uni-eus-rg -n vi-dev-uni-eus-aks --context eus
-kubelogin convert-kubeconfig -l azurecli
-
-echo "sanity get nodes on eus"
-kubectl get nodes
-
-echo "connect to EUS cluster" 
-az aks get-credentials -g vi-dev-uni-wus2-rg -n vi-dev-uni-wus2-aks --context wus2
-kubelogin convert-kubeconfig -l azurecli
-
-echo "sanity get nodes on wus2"
-kubectl get nodes
