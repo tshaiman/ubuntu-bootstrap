@@ -56,11 +56,6 @@ curl -L https://github.com/a8m/envsubst/releases/download/${ENVSUBST_VERSION}/en
         && chmod +x envsubst \
         && sudo mv envsubst /usr/local/bin
 
-# Auto Suggestion
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-#k9s 
-brew install k9s
 
 ## ZSH Customizations
 cp .zshrc ~/.zshrc
@@ -73,5 +68,4 @@ which helm
 which jq
 which yq
 which python
-which brew
 which kubelogin
